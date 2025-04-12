@@ -5,12 +5,12 @@
     <server>
         <id>nexus-releases</id>
         <username>admin</username>
-        <password>1243</password>
+        <password>admin</password>
     </server>
     <server>
         <id>nexus-snapshots</id>
         <username>admin</username>
-        <password>1243</password>
+        <password>admin</password>
     </server>
   </servers>
   <profiles>
