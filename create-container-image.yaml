@@ -38,6 +38,6 @@
   - name: Push to docker hub
     docker_image:
       name: iwayq
-      repository: iwayqdockertest/iwayq:1.0
+      repository: parmarajay/irada:1.0
       push: yes
       source: local
