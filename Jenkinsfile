@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'nodejs sonar'
+    }
     tools {
         maven 'Maven' // Must match the name in Jenkins > Global Tool Config
     }
@@ -11,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                sshagent(['git-ssh-key']) {
+                sshagent(['git-ssh-jenkins-agent-key']) {
                     checkout([$class: 'GitSCM',
                         branches: [[name: '*/main']],
                         userRemoteConfigs: [[
